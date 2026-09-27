@@ -1,0 +1,114 @@
+<svg viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#5b7a99"/>
+    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e14"/>
+      <stop offset="100%" stop-color="#0d1420"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="900" fill="url(#bg)"/>
+
+  <text x="600" y="38" text-anchor="middle" fill="#6fffe9" font-size="24" font-weight="700">PROJECT NAKSHATRA-ENGINE — System Architecture</text>
+  <text x="600" y="60" text-anchor="middle" fill="#8aa0b8" font-size="13">AI-Enabled Digital Twin for MALE-UAV Aero Piston Engine Health Monitoring</text>
+
+  <!-- Engine Simulator + Faults -->
+  <rect x="40" y="90" width="330" height="180" rx="10" fill="#131a26" stroke="#3d6f8f" stroke-width="1.5"/>
+  <text x="205" y="115" text-anchor="middle" fill="#6fffe9" font-size="15" font-weight="700">ENGINE SIMULATOR</text>
+  <text x="205" y="131" text-anchor="middle" fill="#7f92a8" font-size="11">engine_sim.py</text>
+  <text x="60" y="152" fill="#c7d6e5" font-size="11">Coupled 1st-order ODEs:</text>
+  <text x="60" y="168" fill="#c7d6e5" font-size="11">RPM · CHT · EGT · Oil T/P</text>
+  <text x="60" y="184" fill="#c7d6e5" font-size="11">Fuel flow · Vibration · Bus V</text>
+  <text x="60" y="205" fill="#e9c46a" font-size="11" font-weight="600">+ FAULT INJECTION (faults.py)</text>
+  <text x="60" y="221" fill="#c7d6e5" font-size="11">8 fault models, equilibrium-</text>
+  <text x="60" y="237" fill="#c7d6e5" font-size="11">target bias (bounded, physical)</text>
+  <text x="60" y="256" fill="#8aa0b8" font-size="10" font-style="italic">5 mission profiles · swappable for</text>
+  <text x="60" y="269" fill="#8aa0b8" font-size="10" font-style="italic">real CAN / FADEC telemetry later</text>
+
+  <!-- Digital Twin Core -->
+  <rect x="420" y="90" width="330" height="180" rx="10" fill="#131a26" stroke="#3d6f8f" stroke-width="1.5"/>
+  <text x="585" y="115" text-anchor="middle" fill="#6fffe9" font-size="15" font-weight="700">DIGITAL TWIN CORE</text>
+  <text x="585" y="131" text-anchor="middle" fill="#7f92a8" font-size="11">twin_core.py</text>
+  <text x="440" y="155" fill="#c7d6e5" font-size="11">Independent steady-state physics</text>
+  <text x="440" y="171" fill="#c7d6e5" font-size="11">model. Computes "expected" value</text>
+  <text x="440" y="187" fill="#c7d6e5" font-size="11">per channel from (RPM, throttle,</text>
+  <text x="440" y="203" fill="#c7d6e5" font-size="11">altitude, OAT).</text>
+  <text x="440" y="230" fill="#e9c46a" font-size="12" font-weight="600">residual = actual − expected</text>
+  <text x="440" y="248" fill="#8aa0b8" font-size="10" font-style="italic">normalized by per-channel noise floor</text>
+
+  <!-- AI/ML Layer -->
+  <rect x="800" y="90" width="360" height="180" rx="10" fill="#131a26" stroke="#3d6f8f" stroke-width="1.5"/>
+  <text x="980" y="115" text-anchor="middle" fill="#6fffe9" font-size="15" font-weight="700">AI/ML LAYER</text>
+  <text x="980" y="131" text-anchor="middle" fill="#7f92a8" font-size="11">ml_models.py</text>
+  <text x="820" y="153" fill="#c7d6e5" font-size="11">• IsolationForest → point anomaly score</text>
+  <text x="820" y="171" fill="#c7d6e5" font-size="11">• CUSUM chart → sensor drift flag</text>
+  <text x="820" y="189" fill="#c7d6e5" font-size="11">• Exponential curve fit → RUL + 90% CI</text>
+  <text x="820" y="207" fill="#c7d6e5" font-size="11">• Holt smoothing → denoise RUL input</text>
+  <text x="820" y="225" fill="#c7d6e5" font-size="11">• SHAP → anomaly attribution</text>
+  <text x="820" y="248" fill="#8aa0b8" font-size="10" font-style="italic">stretch: LSTM-AE, XGBoost RUL, Flower FL</text>
+
+  <!-- arrows row 1 -->
+  <line x1="370" y1="180" x2="418" y2="180" stroke="#5b7a99" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="393" y="172" text-anchor="middle" fill="#5b7a99" font-size="9">telemetry</text>
+  <line x1="750" y1="180" x2="798" y2="180" stroke="#5b7a99" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="775" y="172" text-anchor="middle" fill="#5b7a99" font-size="9">residuals</text>
+
+  <!-- Decision Support -->
+  <rect x="40" y="320" width="1120" height="150" rx="10" fill="#1a1428" stroke="#9b59b6" stroke-width="1.5"/>
+  <text x="600" y="346" text-anchor="middle" fill="#c39bd3" font-size="15" font-weight="700">DECISION SUPPORT / AUTONOMY LAYER — decision_support.py</text>
+  <text x="70" y="372" fill="#d6c3e0" font-size="12" font-weight="600">DecisionEngine</text>
+  <text x="70" y="390" fill="#c7d6e5" font-size="11">RUL vs (remaining mission + safety margin) → Advisory</text>
+  <text x="70" y="408" fill="#e9c46a" font-size="11" font-weight="600">CONTINUE → MONITOR → DIVERT_ADVISORY → ABORT_RECOMMENDED → RTB_IMMEDIATE</text>
+  <text x="70" y="432" fill="#d6c3e0" font-size="12" font-weight="600">DegradedModeManager</text>
+  <text x="70" y="450" fill="#c7d6e5" font-size="11">If ground link lost → keeps deciding locally onboard; buffers compressed advisory-transition</text>
+  <text x="70" y="464" fill="#c7d6e5" font-size="11">summaries; drains/syncs once link_restored()</text>
+
+  <!-- arrows into decision layer -->
+  <line x1="205" y1="270" x2="205" y2="318" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="585" y1="270" x2="585" y2="318" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="980" y1="270" x2="980" y2="318" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Storage + Backend -->
+  <rect x="120" y="530" width="330" height="140" rx="10" fill="#131a26" stroke="#3d6f8f" stroke-width="1.5"/>
+  <text x="285" y="556" text-anchor="middle" fill="#6fffe9" font-size="15" font-weight="700">STORAGE (SQLite)</text>
+  <text x="285" y="572" text-anchor="middle" fill="#7f92a8" font-size="11">storage.py</text>
+  <text x="140" y="596" fill="#c7d6e5" font-size="11">Time-series log: telemetry, twin,</text>
+  <text x="140" y="612" fill="#c7d6e5" font-size="11">ml output, decision, ground-truth</text>
+  <text x="140" y="628" fill="#c7d6e5" font-size="11">fault labels (append-only)</text>
+  <text x="140" y="650" fill="#8aa0b8" font-size="10" font-style="italic">swappable for TimescaleDB / InfluxDB</text>
+
+  <rect x="500" y="530" width="330" height="140" rx="10" fill="#131a26" stroke="#3d6f8f" stroke-width="1.5"/>
+  <text x="665" y="556" text-anchor="middle" fill="#6fffe9" font-size="15" font-weight="700">BACKEND (FastAPI + WS)</text>
+  <text x="665" y="572" text-anchor="middle" fill="#7f92a8" font-size="11">backend.py</text>
+  <text x="520" y="596" fill="#c7d6e5" font-size="11">WebSocket: /ws/telemetry live stream</text>
+  <text x="520" y="612" fill="#c7d6e5" font-size="11">REST: mission / fault / link control,</text>
+  <text x="520" y="628" fill="#c7d6e5" font-size="11">history, replay endpoints</text>
+
+  <!-- pipeline orchestrator label -->
+  <rect x="900" y="530" width="260" height="140" rx="10" fill="#131a26" stroke="#3d6f8f" stroke-width="1.5"/>
+  <text x="1030" y="556" text-anchor="middle" fill="#6fffe9" font-size="15" font-weight="700">PIPELINE</text>
+  <text x="1030" y="572" text-anchor="middle" fill="#7f92a8" font-size="11">pipeline.py</text>
+  <text x="920" y="596" fill="#c7d6e5" font-size="11">Orchestrates one tick end-to-end;</text>
+  <text x="920" y="612" fill="#c7d6e5" font-size="11">data-source agnostic (live / replay);</text>
+  <text x="920" y="628" fill="#c7d6e5" font-size="11">hosts sanity/hysteresis gates</text>
+
+  <line x1="285" y1="470" x2="285" y2="528" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="665" y1="470" x2="665" y2="528" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="1030" y1="470" x2="1030" y2="528" stroke="#9b59b6" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="600" x2="498" y2="600" stroke="#5b7a99" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="498" y1="612" x2="450" y2="612" stroke="#5b7a99" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Dashboard -->
+  <rect x="320" y="740" width="560" height="130" rx="10" fill="#131a26" stroke="#2ecc71" stroke-width="1.5"/>
+  <text x="600" y="766" text-anchor="middle" fill="#6fffe9" font-size="15" font-weight="700">DASHBOARD (Streamlit) — dashboard.py</text>
+  <text x="345" y="790" fill="#c7d6e5" font-size="11">Mission-control dark theme: live health metrics · fault chips ·</text>
+  <text x="345" y="806" fill="#c7d6e5" font-size="11">SHAP explanation · RUL with confidence band · advisory banner ·</text>
+  <text x="345" y="822" fill="#c7d6e5" font-size="11">CUSUM drift panel · mission/fault/link-loss control sidebar</text>
+  <text x="345" y="844" fill="#8aa0b8" font-size="10" font-style="italic">Standalone mode (direct pipeline) or backend-connected (WebSocket client)</text>
+
+  <line x1="665" y1="670" x2="600" y2="738" stroke="#2ecc71" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="600" y="890" text-anchor="middle" fill="#5b7a99" font-size="10">Prototype for SIH / DRDO problem statement — all telemetry is physics-grounded simulation, no real engine hardware used.</text>
+</svg>

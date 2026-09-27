@@ -1,0 +1,77 @@
+>>> Scheduled fault 'overheating_trend' at t=260.0s, ramp=200.0s, magnitude=1.0
+>>> Running mission profile 'normal_cruise' for 700.0s (dt=0.5s)...
+----------------------------------------------------------------------------------------------------------------------------------
+t=    0.5s | RPM= 2481 CHT= 119.9C EGT= 655.7C OilP= 342.3kPa Vib=0.091g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=   10.5s | RPM= 3888 CHT= 128.2C EGT= 726.9C OilP= 472.3kPa Vib=0.204g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=   20.5s | RPM= 3941 CHT= 131.6C EGT= 729.3C OilP= 471.8kPa Vib=0.170g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=   30.5s | RPM= 3960 CHT= 135.1C EGT= 731.8C OilP= 475.4kPa Vib=0.168g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=   40.5s | RPM= 3976 CHT= 142.9C EGT= 737.8C OilP= 470.5kPa Vib=0.190g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=   50.5s | RPM= 3984 CHT= 147.4C EGT= 734.8C OilP= 471.8kPa Vib=0.204g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=   60.5s | RPM= 4014 CHT= 149.7C EGT= 737.4C OilP= 476.2kPa Vib=0.180g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=   70.5s | RPM= 3993 CHT= 153.6C EGT= 737.6C OilP= 471.7kPa Vib=0.180g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=   80.5s | RPM= 4004 CHT= 156.1C EGT= 737.9C OilP= 466.7kPa Vib=0.191g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=   90.5s | RPM= 4002 CHT= 157.3C EGT= 739.3C OilP= 460.1kPa Vib=0.175g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  100.5s | RPM= 4005 CHT= 159.9C EGT= 736.2C OilP= 462.3kPa Vib=0.159g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  110.5s | RPM= 3980 CHT= 160.3C EGT= 741.0C OilP= 456.7kPa Vib=0.184g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  120.5s | RPM= 3956 CHT= 159.2C EGT= 730.1C OilP= 452.0kPa Vib=0.175g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  130.5s | RPM= 3940 CHT= 161.8C EGT= 731.7C OilP= 451.1kPa Vib=0.171g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  140.5s | RPM= 3906 CHT= 161.7C EGT= 733.0C OilP= 444.2kPa Vib=0.179g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  150.5s | RPM= 3908 CHT= 162.9C EGT= 732.1C OilP= 450.7kPa Vib=0.184g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  160.5s | RPM= 3861 CHT= 163.0C EGT= 722.9C OilP= 448.0kPa Vib=0.182g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  170.5s | RPM= 3857 CHT= 162.9C EGT= 722.0C OilP= 435.3kPa Vib=0.169g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  180.5s | RPM= 3835 CHT= 161.3C EGT= 716.1C OilP= 438.8kPa Vib=0.178g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  190.5s | RPM= 3814 CHT= 160.6C EGT= 716.4C OilP= 435.5kPa Vib=0.177g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  200.5s | RPM= 3814 CHT= 157.6C EGT= 709.2C OilP= 432.5kPa Vib=0.165g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  210.5s | RPM= 3792 CHT= 156.5C EGT= 705.2C OilP= 427.6kPa Vib=0.169g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  220.5s | RPM= 3799 CHT= 155.5C EGT= 711.9C OilP= 431.8kPa Vib=0.179g | anomaly=-0.07 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  230.5s | RPM= 3825 CHT= 154.7C EGT= 707.9C OilP= 438.3kPa Vib=0.169g | anomaly=-0.11 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  240.5s | RPM= 3839 CHT= 156.1C EGT= 714.7C OilP= 443.2kPa Vib=0.171g | anomaly=-0.10 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  250.5s | RPM= 3840 CHT= 159.9C EGT= 711.0C OilP= 431.9kPa Vib=0.170g | anomaly=-0.10 (ok  ) | RUL=      n/a | faults=[-] | ADVISORY=CONTINUE
+t=  260.5s | RPM= 3851 CHT= 156.7C EGT= 726.3C OilP= 434.7kPa Vib=0.191g | anomaly=-0.08 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  270.5s | RPM= 3893 CHT= 158.8C EGT= 726.4C OilP= 439.3kPa Vib=0.168g | anomaly=-0.09 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  280.5s | RPM= 3903 CHT= 158.7C EGT= 726.9C OilP= 440.2kPa Vib=0.194g | anomaly=-0.05 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  290.5s | RPM= 3926 CHT= 159.7C EGT= 727.2C OilP= 438.9kPa Vib=0.202g | anomaly=-0.05 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  300.5s | RPM= 3946 CHT= 160.8C EGT= 733.2C OilP= 444.6kPa Vib=0.172g | anomaly=-0.10 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  310.5s | RPM= 3960 CHT= 163.4C EGT= 739.6C OilP= 446.1kPa Vib=0.191g | anomaly=-0.07 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  320.5s | RPM= 3991 CHT= 163.5C EGT= 743.6C OilP= 448.4kPa Vib=0.184g | anomaly=-0.06 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  330.5s | RPM= 3980 CHT= 163.1C EGT= 741.0C OilP= 441.1kPa Vib=0.161g | anomaly=-0.03 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  340.5s | RPM= 4010 CHT= 165.7C EGT= 755.6C OilP= 439.7kPa Vib=0.169g | anomaly=+0.01 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  350.5s | RPM= 4011 CHT= 169.6C EGT= 749.3C OilP= 436.7kPa Vib=0.193g | anomaly=+0.00 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  360.5s | RPM= 4011 CHT= 176.2C EGT= 755.1C OilP= 440.9kPa Vib=0.178g | anomaly=+0.01 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  370.5s | RPM= 4010 CHT= 179.1C EGT= 759.3C OilP= 433.8kPa Vib=0.200g | anomaly=+0.03 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  380.5s | RPM= 3995 CHT= 184.3C EGT= 753.8C OilP= 433.4kPa Vib=0.188g | anomaly=+0.01 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  390.5s | RPM= 3977 CHT= 184.4C EGT= 743.0C OilP= 432.5kPa Vib=0.174g | anomaly=-0.01 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  400.5s | RPM= 3969 CHT= 188.3C EGT= 755.3C OilP= 425.9kPa Vib=0.196g | anomaly=+0.02 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  410.5s | RPM= 3929 CHT= 190.6C EGT= 758.8C OilP= 417.5kPa Vib=0.168g | anomaly=+0.00 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  420.5s | RPM= 3921 CHT= 192.1C EGT= 757.8C OilP= 420.1kPa Vib=0.160g | anomaly=+0.01 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  430.5s | RPM= 3899 CHT= 194.6C EGT= 763.8C OilP= 414.4kPa Vib=0.168g | anomaly=-0.01 (ok  ) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=MONITOR
+t=  440.5s | RPM= 3877 CHT= 197.7C EGT= 755.7C OilP= 417.7kPa Vib=0.163g | anomaly=+0.00 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  450.5s | RPM= 3851 CHT= 203.9C EGT= 758.1C OilP= 405.4kPa Vib=0.165g | anomaly=+0.01 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  460.5s | RPM= 3843 CHT= 211.4C EGT= 760.6C OilP= 401.6kPa Vib=0.184g | anomaly=+0.01 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  470.5s | RPM= 3812 CHT= 213.0C EGT= 758.0C OilP= 401.1kPa Vib=0.185g | anomaly=+0.05 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  480.5s | RPM= 3807 CHT= 213.6C EGT= 755.6C OilP= 398.6kPa Vib=0.166g | anomaly=+0.01 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  490.5s | RPM= 3807 CHT= 217.8C EGT= 757.4C OilP= 398.4kPa Vib=0.163g | anomaly=+0.02 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  500.5s | RPM= 3805 CHT= 219.5C EGT= 759.3C OilP= 395.1kPa Vib=0.164g | anomaly=+0.04 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  510.5s | RPM= 3808 CHT= 220.2C EGT= 758.1C OilP= 395.2kPa Vib=0.164g | anomaly=+0.03 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  520.5s | RPM= 3810 CHT= 221.5C EGT= 757.1C OilP= 387.5kPa Vib=0.160g | anomaly=+0.01 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  530.5s | RPM= 3826 CHT= 223.9C EGT= 765.8C OilP= 387.9kPa Vib=0.171g | anomaly=+0.01 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  540.5s | RPM= 3849 CHT= 223.0C EGT= 764.2C OilP= 389.8kPa Vib=0.177g | anomaly=+0.06 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  550.5s | RPM= 3865 CHT= 224.4C EGT= 760.7C OilP= 396.2kPa Vib=0.158g | anomaly=+0.03 (ANOM) | RUL=      n/a | faults=[overheating_trend] | ADVISORY=DIVERT_ADVISORY
+t=  560.5s | RPM= 3891 CHT= 221.6C EGT= 771.8C OilP= 389.4kPa Vib=0.178g | anomaly=-0.00 (ok  ) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  570.5s | RPM= 3904 CHT= 224.0C EGT= 766.9C OilP= 389.4kPa Vib=0.186g | anomaly=+0.00 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  580.5s | RPM= 3947 CHT= 227.4C EGT= 780.3C OilP= 384.6kPa Vib=0.177g | anomaly=+0.01 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  590.5s | RPM= 3952 CHT= 225.3C EGT= 776.2C OilP= 381.4kPa Vib=0.191g | anomaly=+0.03 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  600.5s | RPM= 3967 CHT= 226.1C EGT= 775.5C OilP= 384.1kPa Vib=0.180g | anomaly=+0.02 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  610.5s | RPM= 3989 CHT= 226.0C EGT= 781.4C OilP= 382.6kPa Vib=0.189g | anomaly=+0.02 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  620.5s | RPM= 3999 CHT= 226.9C EGT= 776.0C OilP= 384.0kPa Vib=0.173g | anomaly=+0.01 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  630.5s | RPM= 4010 CHT= 228.3C EGT= 785.5C OilP= 383.6kPa Vib=0.187g | anomaly=+0.03 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  640.5s | RPM= 4017 CHT= 228.4C EGT= 784.6C OilP= 387.5kPa Vib=0.179g | anomaly=+0.02 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  650.5s | RPM= 4002 CHT= 227.0C EGT= 779.0C OilP= 379.0kPa Vib=0.177g | anomaly=+0.02 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  660.5s | RPM= 4005 CHT= 226.3C EGT= 782.1C OilP= 373.7kPa Vib=0.192g | anomaly=+0.01 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  670.5s | RPM= 3986 CHT= 230.2C EGT= 780.5C OilP= 380.4kPa Vib=0.194g | anomaly=+0.03 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  680.5s | RPM= 3972 CHT= 230.1C EGT= 778.7C OilP= 379.5kPa Vib=0.181g | anomaly=+0.02 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+t=  690.5s | RPM= 3951 CHT= 230.4C EGT= 776.1C OilP= 374.4kPa Vib=0.181g | anomaly=+0.00 (ANOM) | RUL=   0.0min | faults=[overheating_trend] | ADVISORY=RTB_IMMEDIATE
+----------------------------------------------------------------------------------------------------------------------------------
+>>> Done. 1400 samples written to demo_run.db
+
+(wall time: 79.3s)

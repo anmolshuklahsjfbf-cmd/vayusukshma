@@ -1,0 +1,22 @@
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+scikit-learn>=1.3
+shap>=0.44
+fastapi>=0.110
+uvicorn[standard]>=0.29
+websockets>=12.0
+pydantic>=2.5
+sqlalchemy>=2.0
+streamlit>=1.32
+plotly>=5.20
+statsmodels>=0.14
+
+# Optional / stretch goals mentioned in the spec (not required to run the
+# core prototype -- see technical_doc.md "Stretch Goals" section):
+# torch            # LSTM Autoencoder sequence anomaly detector
+# xgboost          # Gradient-boosted RUL regressor
+# flwr             # Federated learning across simulated UAV clients
+# onnxruntime      # Edge inference / quantized model deployment
+# python-can       # Real virtual-CAN (vcan0) transport instead of in-process calls
+# paho-mqtt        # MQTT transport alternative to CAN
